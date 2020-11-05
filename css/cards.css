@@ -176,18 +176,6 @@ article.row div {
   border: 1px solid white;
 }
 
-/**** For your reference ****/
-/* article.row {
-  border: 1px solid white;
-}
-article.row:hover {
-  border: 1px solid yellow;
-}
-article.row div:hover {
-  border: 1px solid green;
-} */
-/* Your divs won't expand to contain absolute positioned images */
-
 #idea-one img,
 #idea-two img,
 #idea-three img {
@@ -195,12 +183,7 @@ article.row div:hover {
   bottom: -20px;
   left: 50px;
 }
-
-/* Here's the column repositioning magic. This media query says "Apply these styles only until page width is greater than 750px" 
-
-***To make this work, your media query has to be beneath your other styles to keep it from being overwritten later on by your general styles*** */
 @media (max-width: 750px) {
-  /* This resizes the divs that contain your content to fill the width of the page so that they stack vertically */
   article.row div {
     min-width: 300px;
     width: 90%;
@@ -209,12 +192,10 @@ article.row div:hover {
     display: block;
   }
 
-  /* Center your text */
   #some-other-box h3 {
     text-align: center;
   }
 
-  /* Center your image */
   #idea-one img,
   #idea-two img,
   #idea-three img {
@@ -224,7 +205,6 @@ article.row div:hover {
     bottom: inherit;
   }
 
-  /* This tells the browswer to stack the content vertically */
   #idea-two {
     display: -webkit-box;
     display: -moz-box;
@@ -234,13 +214,9 @@ article.row div:hover {
     box-orient: vertical;
   }
 
-  /* This tells the browswer to draw the first box (div:first-of-type) within our stacked content block (identified in the previous rule) in the second position ([...]box-ordinal-group:2;)
-  This gives us a nice arrangement of alternating text and images, and allows us two have a custom layout for smaller or wider screens.*/
   #idea-two div:first-of-type {
     -webkit-box-ordinal-group: 2;
     -moz-box-ordinal-group: 2;
     box-ordinal-group: 2;
   }
 }
-
-
