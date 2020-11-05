@@ -21,35 +21,45 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="./css/main.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   
 
 </head>
 
 <body style="overflow-x: hidden;">
-   <nav class="navbar">
-    <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
-            <i class="fa fa-bars"></i>
-        </label>
-    <a href="#" class="logo">Vaibhav Shinde</a>
-    <input type="checkbox" id="chkToggle"></input>
-    <ul class="main-nav" id="js-menu">
-      <li>
-        <a href="#home" class="nav-links">Home</a>
-      </li>
-      <li>
-        <a href="#about" class="nav-links">About Me</a>
-      </li>
-      <li>
-        <a href="#skills" class="nav-links">Skills</a>
-      </li>
-      <li>
-        <a href="#project" class="nav-links">Projects</a>
-      </li>
-      <li>
-        <a href="#contact" class="nav-links">Contact</a>
-      </li>
-    </ul>
-  </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+      <a class="navbar-brand" href="#">VAIBHAV SHINDE</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0" id="hover" style="margin-left:0;">
+          <li class="nav-item" style="padding:10px 0 0 30px;">
+            <a class="nav-link " href="#">HOME</a>
+          </li>
+          <li class="nav-item" style="padding:10px 0 0 30px;">
+            <a class="nav-link" href="#about">ABOUT</a>
+          </li>
+          <li class="nav-item" style="padding:10px 0 0 30px;">
+            <a class="nav-link" href="#ourproduct">OUR PRODUCTS</a>
+          </li>
+          <li class="nav-item" style="padding:10px 0 0 30px;">
+            <a class="nav-link" href="#contact">CONTACT US</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
   <main>
     <div class="container flex ac" id="home">
