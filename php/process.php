@@ -10,7 +10,7 @@
 
 session_start();
 
-$conn=mysqli_connect("localhost","root","","vaibhavs");
+$conn=mysqli_connect("localhost","id15321693_vshinde","Contactinfo#127","id15321693_vaibhavs");
 
     $e = mysqli_real_escape_string($conn, $_POST['email']);
     $msg = mysqli_real_escape_string($conn, $_POST['message']);
